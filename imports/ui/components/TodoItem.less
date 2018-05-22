@@ -1,0 +1,140 @@
+@import '{}/imports/ui/stylesheets/utils.less';
+
+//ja mixin for elements of list-item
+.nominal-size-element {
+  margin-top: 0.0em;
+  margin-bottom: 0.2em;
+  margin-left: 0.0em;
+  margin-right: 0.0em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-bottom: 0.0em;
+  padding-top: 0.2em;
+  border-radius: 0px;
+  text-align: center;
+}
+.list-item-element {
+  margin-top: 0.0em;
+  margin-bottom: 0.2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-bottom: 0.0em;
+  padding-top: 0.2em;
+  border-radius: 5px;
+}
+
+.relevance8 {
+  background-color: @color-relevance8;
+}
+
+//ja only for children of list-items
+.list-items .list-item {
+  .font-s2; //ja mixin from typography.less
+
+  // Layout of list-item children
+  display: flex;
+  // flex-wrap: wrap;
+  // height: 3rem;
+  height: auto;
+  width: 100%;
+  max-width: 50em;
+  .list-item-element;
+
+  .item-no {
+    width: 2.0em;
+    text-align: center;
+    background-color: @color-rare;
+    .list-item-element;
+  }
+
+  .description {
+    background-color: @color-rare;
+    .list-item-element;
+  }
+
+  .relevance8 {
+    background-color: @color-relevance8;
+    .list-item-element;
+  }
+
+
+  .nominal-size {
+    // width: 1.5em;
+    background-color: @color-nominal-size;
+    .nominal-size-element;
+    flex-wrap: nowrap;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-left: 0.3em;
+    font-weight: 600;
+
+    & ~ div {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .lower-deviation {
+    // width: 1.5em;
+    background-color: @color-lower-deviation;
+    .nominal-size-element;
+    border-color: @color-medium-rare;
+    border-width: 1px;
+    border-left-style: solid;
+    flex-wrap: nowrap;
+
+    & ~ div {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .upper-deviation {
+    // width: 1.5em;
+    background-color: @color-upper-deviation;
+    .nominal-size-element;
+    flex-wrap: nowrap;
+    border-color: @color-medium-rare;
+    border-width: 1px;
+    border-left-style: solid;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+    & ~ div {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .measured-value {
+    margin-left: auto !important;
+    // background: @color-missing-value; //ja transparent
+    cursor: pointer;
+    width: 4em;
+    text-align: center;
+    // flex: 1;
+    .list-item-element;
+
+    &:focus {
+      cursor: text;
+    }
+
+  }
+  .not_yet_measured {
+    background: @color-missing-value;
+  }
+
+  .good {
+    background: @color-good-value;
+  }
+
+  .rejected {
+    background: @color-rejected-value;
+  }
+
+  // Border between list items
+  //ja "+" selects all .list-item that are placed immediately after .list-items
+  & + .list-item {
+    border-top: 1px solid #f0f9fb;
+  }
+
+}

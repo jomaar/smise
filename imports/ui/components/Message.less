@@ -1,0 +1,42 @@
+@import '{}/imports/ui/stylesheets/utils.less';
+
+// Empty states and 404 messages
+.wrapper-message {
+  .position(absolute, 45%, 0, auto, 0);
+  transform: translate3d(0, -50%, 0);
+  text-align: center;
+
+  .title-message {
+    .font-l1;
+    .type-light;
+    color: @color-message-title;
+    margin-bottom: .5em;
+    font-weight: bolder;
+  }
+
+  .subtitle-message {
+    .font-m1;
+    color: @color-message-subtitle;
+  }
+
+  .details-message {
+    .font-s3;
+    color: @color-message-details;
+    text-align: justify;
+    margin: 3em;
+  }
+
+  .image-message {
+    width: 10em;
+    height: auto;
+    margin-bottom: 2em;
+  }
+
+  .image-bottom-message {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2em;
+  }
+
+
+}

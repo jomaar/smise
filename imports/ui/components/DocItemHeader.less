@@ -1,0 +1,52 @@
+@import '{}/imports/ui/stylesheets/utils.less';
+
+//ja mixin for elements of list-item
+.list-header-element {
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+  margin-right: 0.0em;
+  padding: 0.2em 0.6em;
+  // border-radius: 5px;
+  // Layout of list-item children
+  display: flex;
+  // flex-wrap: wrap;
+  // height: 3rem;
+  height: auto;
+  width: 100%;
+  max-width: 50em;
+}
+
+//ja only for children of list-items
+.list-items .level1  {
+  .font-s2; //ja mixin from typography.less
+  font-weight: 600;
+  background-color: @color-list-header-level1;
+
+  .list-header-element;
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+
+  // Border between list items
+  //ja "+" selects all .list-item that are placed immediately after .list-items
+  & + .list-item {
+    border-top: 1px solid #f0f9fb;
+    // background-color: @color-rare;
+  }
+
+}
+
+.list-items .level2  {
+  .font-s2; //ja mixin from typography.less
+  background-color: @color-list-header-level2;
+
+  .list-header-element;
+  padding: 0.0em 0.6em;
+
+  // Border between list items
+  //ja "+" selects all .list-item that are placed immediately after .list-items
+  & + .list-item {
+    border-top: 1px solid #f0f9fb;
+    // background-color: @color-rare;
+  }
+
+}

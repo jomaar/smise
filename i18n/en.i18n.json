@@ -1,0 +1,121 @@
+{
+  "components": {
+    "userMenu": {
+      "logout": "Abmelden",
+      "login": "Login",
+      "join": "Registrieren"
+    },
+    "connectionNotification": {
+      "tryingToConnect": "Verbindungsaufbau",
+      "connectionIssue": "Versuche die Verbindung herzustellen …"
+    },
+    "listHeader": {
+      "deleteConfirm": "Are you sure you want to delete the list",
+      "selectAction": "Select an action",
+      "makePublic": "Make Public",
+      "makePrivate": "Make Private",
+      "delete": "Delete",
+      "makeListPublic": "Make list public",
+      "makeListPrivate": "Make list private",
+      "deleteList": "Delete list",
+      "cancel": "Cancel",
+      "typeToAdd": "Type to add new tasks",
+      "keyboardInput": "Tastatur",
+      "usbInput": "USB"
+    },
+    "listList": {
+      "newList": "New List",
+      "newListError": "Could not create list."
+    },
+    "loading": {
+      "loading": "Lädt"
+    },
+    "mobileMenu": {
+      "showMenu": "Show Menu"
+    },
+    "todoItem": {
+      "measuredValue": "Messwert"
+    }
+  },
+  "pages": {
+    "authPageJoin": {
+      "emailRequired": "Email erforderlich",
+      "passwordRequired": "Passwort erforderlich",
+      "passwordConfirm": "Bitte bestätigen Sie Ihr Passwort",
+      "usernameRequired": "Benutzername erforderlich",
+      "join": "Anmelden.",
+      "joinReason": "Erstellen Sie mit Ihrer Benutzer-ID ein Benutzerkonto",
+      "yourEmail": "Email-Adresse",
+      "yourAccountId": "Ihre Benutzer-ID",
+      "yourUsername": "Ihre Benutzername (z.B. M1IM1s03)",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "joinNow": "Jetzt anmelden",
+      "haveAccountSignIn": "Sie haben bereits ein Konto? Hier melden Sie sich an!",
+      "projectIdRequired" : "Klasse/Jahr (z.B. M1IM1-1718) erforderlich",
+      "yourProjectId" : "Klasse/Jahr (z.B. M1IM1-1718)"
+    },
+    "authPageSignIn": {
+      "emailRequired": "Email erforderlich",
+      "passwordRequired": "Passwort erforderlich",
+      "signIn": "Anmelden.",
+      "signInReason": "Anmelden zum Erfassen der Prüfprotokolle",
+      "yourEmail": "Ihre Email",
+      "yourUsername": "Ihre Benutzername (z.B. M1IM1s03)",
+      "password": "Passwort",
+      "signInButton": "Anmelden",
+      "needAccount": "Noch nicht registriert? Dann hier …"
+    },
+    "listPage": {
+      "noTasks": "No tasks here",
+      "addAbove": "Add new tasks using the field above",
+      "loading": "Loading tasks..."
+    },
+    "notFoundPage": {
+      "pageNotFound": "..."
+    },
+    "welcomePage": {
+      "welcome": "Willkommen!",
+      "welcomeSubtitle": "… zum Industrie-4.0-Projekt „Prüfprotokolle online erfassen” der Grafenbergschule Schorndorf"
+    }
+  },
+  "api": {
+    "lists": {
+      "insert": {
+        "list": "List"
+      },
+      "makePrivate": {
+        "notLoggedIn": "Must be logged in to make private lists.",
+        "lastPublicList": "Cannot make the last public list private."
+      },
+      "makePublic": {
+        "notLoggedIn": "Must be logged in.",
+        "accessDenied": "You don't have permission to edit this list."
+      },
+      "updateName": {
+        "accessDenied": "You don't have permission to edit this list."
+      },
+      "remove": {
+        "accessDenied": "'You don't have permission to remove this list.'",
+        "lastPublicList": "Cannot delete the last public list."
+      }
+    },
+    "todos": {
+      "insert": {
+        "accessDenied": "Cannot add todos to a private list that is not yours"
+      },
+      "setCheckedStatus": {
+        "accessDenied": "Cannot edit todos in a private list that is not yours"
+      },
+      "updateText": {
+        "accessDenied": "Cannot edit todos in a private list that is not yours"
+      },
+      "remove": {
+        "accessDenied": "Cannot remove todos in a private list that is not yours"
+      },
+      "item": {
+        "taskName": "Task name"
+      }
+    }
+  }
+}
